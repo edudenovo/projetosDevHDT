@@ -1,0 +1,1 @@
+Erro:  c:\rob_usu\config.ini (O sistema não pode encontrar o caminho especificado)

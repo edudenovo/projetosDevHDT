@@ -1,0 +1,47 @@
+select leito.lto_id
+     --, case when atendime.ind_pac_atendimento = 'S' then 'O' else 'V' end situacao 
+     --, pac.codigo 
+     , pac.prontuario 
+     --, pac.nome
+     , substring(SPLIT_PART(replace(replace(pac.nome, ' DA ', ' '), ' DE ', ' '), ' ', 1), 1, 1) || '.' || 
+       substring(SPLIT_PART(replace(replace(pac.nome, ' DA ', ' '), ' DE ', ' '), ' ', 2), 1, 1) || '.' || 
+       substring(SPLIT_PART(replace(replace(pac.nome, ' DA ', ' '), ' DE ', ' '), ' ', 3), 1, 1) || '.' || 
+       substring(SPLIT_PART(replace(replace(pac.nome, ' DA ', ' '), ' DE ', ' '), ' ', 4), 1, 1) || '.' || 
+       substring(SPLIT_PART(replace(replace(pac.nome, ' DA ', ' '), ' DE ', ' '), ' ', 5), 1, 1) || '.' || 
+       substring(SPLIT_PART(replace(replace(pac.nome, ' DA ', ' '), ' DE ', ' '), ' ', 6), 1, 1) nome
+     , date(now()) - date(dthr_inicio) nr_dias
+     , extract(day from dthr_inicio) || '/' || extract(month from dthr_inicio) as admissao
+     , case when extract(year from age(current_date, pac.dt_nascimento)) = 0 and extract(month from age(current_date, pac.dt_nascimento)) = 0 then
+		 extract(month from age(current_date, pac.dt_nascimento)) || ' d'
+	    when extract(year from age(current_date, pac.dt_nascimento)) = 0 then
+		 extract(day from age(current_date, pac.dt_nascimento)) || ' m'
+	    else 
+		 extract(year from age(current_date, pac.dt_nascimento)) || ' a'
+       end idade
+     , case when extract(year from age(current_date, pac.dt_nascimento)) = 0 or extract(year from age(current_date, pac.dt_nascimento)) <= 18 then
+		'MENOR'
+	    else
+		'ADULTO'
+       end tipo
+     , uni.descricao
+     , uni.sigla
+     , esp.nome_especialidade
+     , obs.descricao obs
+  from agh.ain_leitos leito 
+  left join agh.agh_atendimentos atendime 
+    on leito.lto_id = atendime.lto_lto_id
+   and atendime.ind_pac_atendimento = 'S' 
+  left join agh.aip_pacientes pac
+    on pac.prontuario = atendime.prontuario
+  left join agh.agh_unidades_funcionais uni
+    on uni.seq = leito.unf_seq
+  left join agh.agh_especialidades esp
+    on esp.seq = leito.esp_seq
+  left join agh.ain_internacoes int
+    on int.pac_codigo = pac.codigo
+   and int.ind_paciente_internado = 'S'
+  left join agh.ain_observacoes_censo obs
+    on obs.int_seq = int.seq 
+ order by leito.lto_id 
+
+-- select * from agh.agh_unidades_funcionais uni

@@ -1,0 +1,70 @@
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
+jdbc:oracle:thin:@10.98.128.4:1521:prdmv Conectado!
+Conexão Fechada 
+jdbc:postgresql://10.98.0.19:6544/dbaghu Conectado!
+Conexão Fechada 
+quantida Inserida: 0 
